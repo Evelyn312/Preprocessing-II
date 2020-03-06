@@ -1,26 +1,22 @@
 .home {
   .intro{
     .part2{
-      border-bottom: 2px dashed @navigation-border;
+      .border();
     }
   }
 
   .content-section {
     width: 100%;
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flex(space-between, wrap);
 
     
     .text-content {
-      width: 48%;
-      padding-right: 1%;
+      .width-pad();
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+      .width-pad();
 
       img {
         border-radius: 10px;
@@ -31,8 +27,8 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-    // background-color: pink;
+    .border();
+  
 
     .text-content {
       padding-left: 1%;
@@ -48,6 +44,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    
 
     img {
       border-radius: 10px;
@@ -55,14 +52,17 @@
   }
 
   .content-pick {
-    padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 30px;
+    .flex(space-between, nowrap);
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        padding: 1rem 4rem;
+        .btn-style(@button-bg,1.5rem,10px);
+      }
     }
   }
 }// home
