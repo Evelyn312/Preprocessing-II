@@ -188,6 +188,19 @@ img {
   color: black;
   font-size: 1.5rem;
 }
+.intro {
+  width: 100%;
+}
+.intro .part1 {
+  margin: 0 5% 2% 10%;
+}
+.intro .part1 img {
+  width: 100%;
+}
+.intro .part2 {
+  margin: 0 5% 2% 10%;
+  border-bottom: 2px dashed gray;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
