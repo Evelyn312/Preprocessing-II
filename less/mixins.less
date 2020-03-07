@@ -1,1 +1,45 @@
 // Mixins in here
+// width: 48%;
+// padding-right: 1%;
+.width-pad(){
+    width: 48%;
+    padding-right: 1%;
+}
+
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: space-between;
+.flex(@justify, @wrap){
+    display: flex;
+    justify-content: @justify;
+    flex-wrap: @wrap;
+}
+.flex2(@justify,@align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+.border(){
+    border-bottom: 2px dashed @navigation-border;
+}
+
+// background-color: @button-bg;
+// padding: 1rem 4rem;
+// border-radius: 10px;
+// font-size: 1.5rem;
+.btn-style(@bcolor,@size,@radius){
+    background-color: @bcolor;
+    border-radius: @radius;
+    font-size: @size;
+}
+@tablet: ~"(max-width: 500px)";
+
+.media-wid-pat(){
+    width: 100%;
+    padding: 0 5%;
+}
+.btn-pat(){
+    padding: 0 12%;
+}
